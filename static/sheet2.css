@@ -1,0 +1,127 @@
+body{
+
+}
+
+* {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*--------------------------------main CSS--------------------------------------------------------------*/
+.container{
+    width: 100%;
+    align-items: center;
+    display: block;
+    position: center;
+    size: 200%;
+    padding: 100px 100px 100px 100px; 
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/*---------------------------------------banner CSS-----------------------------------------------------------*/
+.p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+ #stripe-info-success {
+        display: block;
+        size: 40;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        width: 50%;
+      }
+      #stripe-info-success.visible {
+        display: block;
+      }
+
+      #stripe-info-failure {
+        display: none;
+        position: fixed;
+        top: 0;
+        float:right;
+        right: 0;
+        background-color: crimson;
+        width: 50%;
+      }
+      #stripe-info-failure {
+        display: block;
+      }
+
+      .close {
+       font-size: 20px;
+        float:right;
+        display:inline-block;
+        padding:2px 5px;
+        color: black;
+        background:whitesmoke;
+        transition: transform .3s;
+    }
+
+    .close:hover {
+        float:right;
+        display:inline-block;
+        padding:2px 5px;
+        background:black;
+        color:whitesmoke;
+        cursor: pointer;
+        transform: rotate(3.142rad);
+        
+    }
+
+    /*--------------------------------------CSS for Small Screens----------------------------------------------------*/
+    @media only screen and (max-width: 720px) {
+    body {
+            display: block;
+            width: auto;
+          background-color: powderblue;
+        }
+
+
+    .p{
+            font-size: 12px;
+        }
+
+
+    .container{
+        width: 100%;
+        align-items: center;
+        display: block;
+        position: center;
+        size: 200%;
+        padding: 200px 100px 100px 100px; 
+}
+
+        .btn{
+            position:inherit;
+            display: inline;
+            padding: 0;
+            width: 120%;
+            font-size: 13px;
+            cursor: pointer;
+            text-align: center;
+            
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }

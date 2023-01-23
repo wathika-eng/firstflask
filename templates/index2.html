@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------------main CSS------------------------------------------------------->
+    <link rel="stylesheet" href="/static/sheet2.css">
+    <title>Go to Login Page</title>
+</head>
+<body>
+
+    <!----------------------banner html-------------------------------------------------------------------------------->
+    <div id="stripe-info-success"> <span class="p" >Click Log In below.</span>
+        <span class='close'>X</span>
+      </div>
+      <div id="stripe-info-failure"> <span class="p" > Continue as a Guest user</span>
+      <span class='close'>X</span></div>
+    </div>
+
+    <!-----------------------main html---------------------------------------------------------------------->
+    <div class="container">
+    <button class="btn"> <h1 class="h1">
+     <a href="{{ url_for('admin') }}" > Go to Login Page</a>    </h1> </button>
+     </div>
+
+    <!----------------------banner JS---------------------------------------------------------------------->
+    <script>
+        window.onload = function(){
+    var label = document.getElementsByClassName('close');
+    for (var i = 0; i<label.length; i++) {
+      label[i].onclick = function () {
+      var el = (this.parentNode);
+      el.parentNode.removeChild(el);
+      };
+    }
+    };
+    </script>
+</body>
+</html>
